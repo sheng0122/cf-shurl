@@ -1,0 +1,18 @@
+name = "url-shortener-redirect"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# KV Namespace binding (Must match the ID used in Pages)
+[[kv_namespaces]]
+binding = "LINKS"
+id = "9feb172d8fbe4c1aa230c8e906ad0b86"
+preview_id = "4e43300c3c5348e0a5ff23685a845b80"
+
+# R2 Bucket binding (Optional for Worker, but good for future use)
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "url-shortener-images"
+
+# Routes will be configured in the Cloudflare Dashboard or here after domain setup
+# [triggers]
+# crons = []

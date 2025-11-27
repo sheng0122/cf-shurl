@@ -1,0 +1,17 @@
+{
+  "name": "url-shortener-redirect",
+  "version": "1.0.0",
+  "description": "Redirect worker for short URL system",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "workers-mcp docgen src/index.js && wrangler deploy"
+  },
+  "dependencies": {
+    "ua-parser-js": "^1.0.37",
+    "workers-mcp": "^0.0.13"
+  },
+  "devDependencies": {
+    "wrangler": "^4.51.0"
+  }
+}

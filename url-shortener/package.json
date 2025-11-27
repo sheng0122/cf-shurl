@@ -1,0 +1,17 @@
+{
+    "name": "url-shortener-monorepo",
+    "version": "1.0.0",
+    "description": "Cloudflare Pages + Worker Short URL System",
+    "scripts": {
+        "dev:pages": "wrangler pages dev public",
+        "dev:worker": "cd worker && wrangler dev",
+        "deploy:worker": "cd worker && wrangler deploy",
+        "deploy:pages": "wrangler pages deploy public"
+    },
+    "devDependencies": {
+        "wrangler": "^3.0.0"
+    },
+    "dependencies": {
+        "nanoid": "^5.1.6"
+    }
+}
